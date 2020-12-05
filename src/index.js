@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Almuerzo from './components/AlmuerzoCena';
 import './index.scss';
-import Home from './components/Home';
+//import Home from './components/Home';
 import reportWebVitals from './reportWebVitals';
-import Client from './components/Client';
-import Header from './components/Header';
+//import Client from './components/Client';
+//import Header from './components/Header';
+//import Desayuno from './components/Desayuno';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home/>
-    <Header />
-    <Client />
+    {/* <Header />
+    <Client /> 
+    <Desayuno />*/}
+    <Almuerzo />
   </React.StrictMode>,
   document.getElementById('root')
 );
