@@ -11,7 +11,7 @@ import Order from '../components/Order/Order';
 const waiter = () => {
     return (
         <Router>
-            <div className="viewChef">
+            <div className="viewWaiter">
                 <Route path='*' component={Header} />
                 <Route path='*' component={Naver} />
                 <Route path='*' component={Client} />
