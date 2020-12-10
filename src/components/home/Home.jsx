@@ -10,13 +10,12 @@ const Home = () => {
         <img src={portada} className="Portada" alt="portada" />
         <p className= "Slogan">Armala - Comela - Disfrutala</p>
         <p className= "Rol">¿Cual es tu rol?</p>
-        <div className="Button-rol">
-        <button>Mesero</button> <button>Chef</button>
+        <div className="Buttonrol">
+        <button className="buttonone">Mesero</button> 
+        <button className="buttontwo">Chef</button>
         </div>
+
     </div>
-    /*<footer className="footer">
-    <p> &copy; Todos los derechos reservados - |A.C.D|  -  BURGERLab   </p>
-    </footer>*/
   );
 };
 
