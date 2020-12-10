@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.scss';
+import Almuerzo from './components/AlmuerzoCena/AlmuerzoCena';
 
-import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
-    <Footer />
-  );
+    <Almuerzo />
+  )
 }
 
 export default App;

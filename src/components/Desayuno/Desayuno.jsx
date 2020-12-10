@@ -1,18 +1,26 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import './Desayuno.scss';
 import cafeA from '../../assets/img/cafe americano.png';
 import cafeL from '../../assets/img/cafe con leche.png';
 import sandw from '../../assets/img/sandwich.png';
 import jugo from '../../assets/img/jugo.png'
 
-
 const Desayuno = () => {
-    render()
+    const openMenu = (e, name) => {
+        e.preventDefault();
+        console.log('El link fue clickeado');
+        let i, content;
+    
+        content = document.getElementsByClassName("menuContent");
+        for(i = 0; i < content.length; i++){
+            content[i].style.display ="none";
+        }
+    }
     return(
         <div>
             <table className="containerDesayuno">
-            <h2>Desayuno</h2>
+            <button className="tabla" onClick={openMenu}> Desayuno </button>
+            <div className="menuContent">
                 <tr>
                     <button className="menuD">
                         <img src={cafeA} alt="cafe" width="60px" height="60px"/>
@@ -45,6 +53,7 @@ const Desayuno = () => {
                         <td className="jugo">7</td>
                     </button>
                 </tr>
+            </div>
             </table>
         </div>
     )
