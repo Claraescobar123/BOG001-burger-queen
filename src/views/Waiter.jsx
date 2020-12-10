@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-//components
+//components..
 import Naver from '../components/naver/Naver';
 import Header from '../components/header/Header';
 import Client from '../components/client/Client';
