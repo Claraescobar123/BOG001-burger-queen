@@ -45,10 +45,10 @@ text-align: center;
   top:72%;
   /*left:48%;*/
 }
-.Buttonrol{
+.rolSection{
   display:inline-block;
 }
-.buttonone {
+.buttonOne {
   position: absolute;
   top:80%;
   right: 55%;
@@ -64,7 +64,7 @@ text-align: center;
   height: 6%;
   /*cursor: pointer;*/
 }
-.buttontwo {
+.buttonTwo {
   position: absolute;
   top:80%;
   right: 30%;
@@ -81,9 +81,42 @@ text-align: center;
   /*cursor: pointer;*/
 }
 
-.buttonone:hover,
-.buttontwo:hover {
+.buttonOne:hover,
+.buttonTwo:hover,
+.buttonThree:hover {
   background: #FAC249;
   border-color:#FAC249;
 }
 
+.nameEmployee{
+  top:90%;
+  right:45%;
+  position: absolute;
+  display:inline-block;
+  width: 25%;
+  height: 6%;
+  background: white;
+  color: #91908E;
+  border-bottom: 1px solid #91908E;
+  border-radius: 50px;
+  text-align: center;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.buttonThree {
+  position: absolute;
+  top:90%;
+  right: 33%;
+  background-color:#FF9045;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 10%;
+  height: 6%;
+  /*cursor: pointer;*/
+}

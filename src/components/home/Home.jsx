@@ -10,13 +10,15 @@ const Home = () => {
         <img src={portada} className="Portada" alt="portada" />
         <p className= "Slogan">Armala - Comela - Disfrutala</p>
         <p className= "Rol">¿Cual es tu rol?</p>
-        <div className="Buttonrol">
-        <button className="buttonone">Mesero</button> 
-        <button className="buttontwo">Chef</button>
+        <div className="rolSection">
+        <button className="buttonOne">Mesero</button> 
+        <button className="buttonTwo">Chef</button>
+        <input type="text" className="nameEmployee" placeholder="Ingresa tu nombre y apellido" required title="Llena el campo"/>
+        <button className="buttonThree">Ingresar</button>
         </div>
-
     </div>
   );
 };
+
 
 export default Home;
