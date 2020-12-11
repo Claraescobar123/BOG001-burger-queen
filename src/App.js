@@ -1,13 +1,10 @@
-import React from 'react';
 import './App.scss';
-import Almuerzo from './components/AlmuerzoCena/AlmuerzoCena';
-
-
+import Waiter from './views/Waiter.jsx';
 
 function App() {
   return (
-    <Almuerzo />
-  )
+    <Waiter />
+  );
 }
 
 export default App;

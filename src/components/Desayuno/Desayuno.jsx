@@ -1,62 +1,35 @@
-import React from 'react';
-import './Desayuno.scss';
-import cafeA from '../../assets/img/cafe americano.png';
-import cafeL from '../../assets/img/cafe con leche.png';
-import sandw from '../../assets/img/sandwich.png';
-import jugo from '../../assets/img/jugo.png'
+import React from "react";
+import "./Desayuno.scss";
+import MenuItem from '../shared/menuItem'
+import data from '../../data/menu.json';
 
 const Desayuno = () => {
-    const openMenu = (e, name) => {
-        e.preventDefault();
-        console.log('El link fue clickeado');
-        let i, content;
-    
-        content = document.getElementsByClassName("menuContent");
-        for(i = 0; i < content.length; i++){
-            content[i].style.display ="none";
-        }
+  const openMenu = (e, name) => {
+    e.preventDefault();
+    console.log("El link fue clickeado");
+    let i, content;
+
+    content = document.getElementsByClassName("menuContent");
+    for (i = 0; i < content.length; i++) {
+      content[i].style.display = "none";
     }
-    return(
-        <div>
-            <table className="containerDesayuno">
-            <button className="tabla" onClick={openMenu}> Desayuno </button>
-            <div className="menuContent">
-                <tr>
-                    <button className="menuD">
-                        <img src={cafeA} alt="cafe" width="60px" height="60px"/>
-                        <td>Café Americano</td>
-                        <td>$</td>
-                        <td className="cafeA">5</td>
-                    </button>
-                </tr>
-                <tr>
-                    <button className="menuD">
-                        <img src={cafeL} alt="cafeLeche" width="50px" height="50px"/>
-                        <td>Café con Leche</td>
-                        <td>$</td>
-                        <td className="cafeL">7</td>
-                    </button>
-                </tr>
-                <tr>
-                    <button className="menuD">
-                        <img src={sandw} alt="sandwich" width="50px" height="40px"/>
-                        <td>Sandwich de Jamón y Queso</td>
-                        <td>$</td>
-                        <td className="sandw">10</td>
-                    </button>
-                </tr>
-                <tr>
-                    <button className="menuD">
-                        <img src={jugo} alt="jugo" width="40px" height="50px"/>
-                        <td>Jugo de Frutas Natural</td>
-                        <td>$</td>
-                        <td className="jugo">7</td>
-                    </button>
-                </tr>
-            </div>
-            </table>
+  };
+  return (
+    <div>
+      <table className="containerDesayuno">
+        <button className="tabla" onClick={openMenu}>
+          {" "}
+          Desayuno{" "}
+        </button>
+        <div className="menuContent">
+            <MenuItem srcImg={data[0].img} txtLabel={data[0].name} altImg={data[0].id} class={data[0].id} price={data[0].price} />
+            <MenuItem srcImg={data[1].img} txtLabel={data[1].name} altImg={data[1].id} class={data[1].id} price={data[1].price} />
+            <MenuItem srcImg={data[2].img} txtLabel={data[2].name} altImg={data[2].id} class={data[2].id} price={data[2].price} />
+            <MenuItem srcImg={data[3].img} txtLabel={data[3].name} altImg={data[3].id} class={data[3].id} price={data[3].price} />
         </div>
-    )
-}
+      </table>
+    </div>
+  );
+};
 
 export default Desayuno;
