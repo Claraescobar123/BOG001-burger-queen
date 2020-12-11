@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Imagenesnav = (props) => {
-    return (
-        <div className="btnNav">
-                <img src={props.srcImg} alt={props.altImg} />
-                <p>{props.txtLabel}</p>
-            </div>
-    )
-}
+  return (
+    <li>
+      <img src={props.srcImg} alt={props.altImg} />
+      <p>{props.txtLabel}</p>
+    </li>
+  );
+};
 
-export default Imagenesnav
+export default Imagenesnav;
