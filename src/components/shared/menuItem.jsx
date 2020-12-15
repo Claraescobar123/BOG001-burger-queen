@@ -1,20 +1,28 @@
 import React from "react";
 
 const MenuItem = (props) => {
-    //srcImg
-    //altImg
-    //txtLabel
-    //class
-    //price
+  //srcImg
+  //altImg
+  //txtLabel
+  //class
+  //price
   return (
-    <tr>
-      <button className="menuD">
-        <img src={props.srcImg} alt={props.altImg} width="60px" height="60px" />
-        <td>{props.txtLabel}</td>
-        <td>$</td>
-        <td className={props.class}>{props.price}</td>
+    <li>
+      <button className="menuItem">
+        <div className="menuImg">
+          <img
+            src={props.srcImg}
+            alt={props.altImg}
+            width="60px"
+            height="60px"
+          />
+        </div>
+        <div className="menuLabel">
+          <p>{props.txtLabel}</p>
+          <p>$ {props.price}</p>
+        </div>
       </button>
-    </tr>
+    </li>
   );
 };
 
