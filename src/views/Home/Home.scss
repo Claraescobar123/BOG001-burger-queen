@@ -40,14 +40,14 @@
     font-family: "Ranchers", cursive;
     position: absolute;
     font-size: 18px;
-    top: 67%;
+    top: 75%;
     /*left:48%;*/
   }
   .rolSection {
     display: inline-block;
     .buttonOne {
       position: absolute;
-      top: 75%;
+      top: 82%;
       right: 55%;
       background-color: #ff9045;
       color: white;
@@ -69,7 +69,7 @@
     }
     .buttonTwo {
       position: absolute;
-      top: 75%;
+      top: 82%;
       right: 30%;
       background-color: #ff9045;
       color: white;
@@ -90,9 +90,9 @@
     }
   }
   .nameSection {
-    display: none;
+    display: flex;
     position: absolute;
-    top: 85%;
+    top: 67%;
     width: 80%;
     margin: auto;
     justify-content: center;
@@ -111,24 +111,6 @@
       font-weight: bold;
       margin-right: 5px;
       outline: none;
-    }
-    .buttonThree {
-      border: transparent;
-      background-color: transparent;
-      outline: none;
-      cursor: pointer;
-      i {
-        color: #ff9045;
-        font-size: 2.5em;
-        &:hover {
-          background: #fac249;
-          border-color: #fac249;
-        }
-      }
-    }
-    @keyframes showu {
-      from {top: 82%;}
-      to {top: 85%;}
     }
   }
   footer{

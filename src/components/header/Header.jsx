@@ -9,6 +9,7 @@ import user from "../../assets/img/usuario.png";
 
 const Header = () => {
   render();
+  const nameEmployee = localStorage.getItem('employ');
   return (
     <nav className="containerNav">
       <div className="containerLogo">
@@ -20,7 +21,7 @@ const Header = () => {
 
       <div className="containerLoginUser">
         <h4>Hola,</h4>
-        <p className="nameLogin"></p>
+        <p className="nameLogin">{nameEmployee}</p>
         <img src={user} className="user" alt="logouser" />
       </div>
     </nav>
