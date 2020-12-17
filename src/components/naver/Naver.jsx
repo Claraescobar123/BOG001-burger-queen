@@ -3,7 +3,7 @@ import pedido from '../../assets/img/pedido.png';
 import ordenLista from '../../assets/img/orden lista.png';
 import logout from '../../assets/img/salida.png';
 import './Naver.scss';
-import Imagenesnav from '../shared/Imagenesnav';
+import Imagenesnav from '../Shared/Imagenesnav';
 
 const naver = () => {
     return (
