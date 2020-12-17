@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.Home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  .Burger-logo {
+    position: absolute;
+    top: 50px;
+    /*left: 40%;*/
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .Portada {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+  }
+  .Slogan {
+    position: absolute;
+    font-weight: bold;
+    font-family: "Short Stack", cursive;
+    font-size: 20px;
+    top: 60%;
+    /*left:45%;*/
+  }
+  .Rol {
+    font-family: "Ranchers", cursive;
+    position: absolute;
+    font-size: 18px;
+    top: 67%;
+    /*left:48%;*/
+  }
+  .rolSection {
+    display: inline-block;
+    .buttonOne {
+      position: absolute;
+      top: 75%;
+      right: 55%;
+      background-color: #ff9045;
+      color: white;
+      border: 2px solid white;
+      border-radius: 50px;
+      padding: 5px;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      font-weight: bold;
+      width: 15%;
+      height: 6%;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        background: #fac249;
+        border-color: #fac249;
+      }
+    }
+    .buttonTwo {
+      position: absolute;
+      top: 75%;
+      right: 30%;
+      background-color: #ff9045;
+      color: white;
+      border: 2px solid white;
+      border-radius: 50px;
+      padding: 5px;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      font-weight: bold;
+      width: 15%;
+      height: 6%;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        background: #fac249;
+        border-color: #fac249;
+      }
+    }
+  }
+  .nameSection {
+    display: none;
+    position: absolute;
+    top: 85%;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    animation-name: showu;
+    animation-duration: 3s;  
+    .nameEmployee {
+      width: 25%;
+      height: 15%;
+      padding: 7px;
+      background: white;
+      color: #91908e;
+      border-bottom: 1px solid #91908e;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 5px;
+      outline: none;
+    }
+    .buttonThree {
+      border: transparent;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+      i {
+        color: #ff9045;
+        font-size: 2.5em;
+        &:hover {
+          background: #fac249;
+          border-color: #fac249;
+        }
+      }
+    }
+    @keyframes showu {
+      from {top: 82%;}
+      to {top: 85%;}
+    }
+  }
+  footer{
+    position: absolute;
+    top: 95%;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2em;
+    background: #8a5e3b;
+    color: white;
+    font-weight: bold;
+    }
+}
