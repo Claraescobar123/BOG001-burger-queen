@@ -3,10 +3,10 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 //components
-import Naver from "../components/Naver/Naver";
-import Header from "../components/Header/Header";
-import Client from "../components/Client/Client";
-import Order from "../components/Order/Order";
+import Naver from "../components/naver/Naver";
+import Header from "../components/header/Header";
+import Client from "../components/client/Client";
+import Order from "../components/order/Order";
 import Menu from "../components/Menu/Menu";
 
 const waiter = () => {

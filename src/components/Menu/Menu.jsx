@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Menu.scss";
-import MenuItem from "../Shared/menuItem";
+import MenuItem from "../shared/menuItem";
 import data from "../../data/menu.json";
 
 const Menu = () => {
