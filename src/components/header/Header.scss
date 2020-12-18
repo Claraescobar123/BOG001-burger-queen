@@ -8,7 +8,7 @@
   border-radius: 0 0 200px 0;
   .containerLogo {
     display: flex;
-    width: 85vw;
+    width: 80vw;
     .logoNav {
       width: 3vw;
       height: 5.5vh;
@@ -38,6 +38,7 @@
   .containerLoginUser {
     display: flex;
     align-items: center;
+    justify-content: center;
     h4 {
       font-size: 20px;
       color: #f48205;
@@ -46,7 +47,7 @@
     }
     p {
       color: #f48205;
-      font-size: 24px;
+      font-size: 20px;
       padding-right: 5%;
       text-transform: uppercase;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
